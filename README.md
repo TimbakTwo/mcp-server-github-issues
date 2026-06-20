@@ -1,3 +1,22 @@
+# MCP GitHub Issues Server
+
+An MCP (Model Context Protocol) server for listing GitHub issues, built with FastMCP.
+
+## Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Create .env file with your GitHub token
+echo "GITHUB_TOKEN=github_pat_..." > .env
+
+# Test the server
+python test_tool.py
+
+# Register with Claude Code
+claude mcp add github-issues -- python server.py
+
 ## Authentication
 
 This MCP server uses a fine‑grained Personal Access Token (PAT) for authentication.
@@ -17,3 +36,4 @@ A PAT is suitable for a single‑user development tool. In a production multi‑
 
 - **Least privilege**: The token is scoped to the minimum repositories and permissions needed.
 - **Secret storage**: The token is never hardcoded and is kept out of version control via `.gitignore`.
+```
