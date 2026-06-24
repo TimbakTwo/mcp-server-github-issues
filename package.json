@@ -1,0 +1,33 @@
+{
+  "name": "mcp-server-github-issues",
+  "version": "1.0.0",
+  "description": "An MCP (Model Context Protocol) server for listing GitHub issues, built with FastMCP.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimbakTwo/mcp-server-github-issues.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TimbakTwo/mcp-server-github-issues/issues"
+  },
+  "homepage": "https://github.com/TimbakTwo/mcp-server-github-issues#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
